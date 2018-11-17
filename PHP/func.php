@@ -29,10 +29,10 @@
 
     if ($status){
 
-      $myfile = fopen("./PHP/speech.txt" , "a+");
+      $myfile = fopen("./PHP/temporary-speech.txt" , "a+");
       fwrite($myfile , $text);
       fclose($myfile);
-      echo "<script>alert('Söz başarıyla eklendi');</script>";
+      echo "<script>alert('Eklediğiniz söz editörün onayından sonra eklenecektir.Teşekkürler');</script>";
     }
 
     /*
